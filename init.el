@@ -28,5 +28,6 @@
 
 (require-init 'setup-general)
 
+(require-init 'setup-python)
 
 ;;; $

@@ -48,5 +48,11 @@
       (setq default-frame-alist
 	    '((width . 106)))))
 
-;;; $
+;; copy shell environment to emacs environment
+(use-package exec-path-from-shell
+  :config
+  (when (memq window-system '(mac ns x))
+    (exec-path-from-shell-initialize)))
+
 (provide 'setup-general)
+;;; $

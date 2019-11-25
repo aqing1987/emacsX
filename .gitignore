@@ -10,3 +10,4 @@ archive-contents
 irony/
 recentf
 *.eld
+elpy/
