@@ -6,7 +6,8 @@
   :config
   (setq company-idle-delay 0)
   (setq company-minimum-prefix-length 3)
-  (global-company-mode 1))
+  (global-company-mode 1)
+  (add-hook 'after-init-hook 'global-company-mode))
 
 (use-package company-irony
   :config
