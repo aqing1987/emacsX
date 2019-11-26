@@ -10,10 +10,8 @@
                          ("melpa-cn" . "https://elpa.emacs-china.org/melpa/")))
 (package-initialize)
 
-(when (not package-archive-contents)
-  (package-refresh-contents))
-
 (unless (package-installed-p 'use-package)
+  (package-refresh-contents)
   (package-install 'use-package))
 
 (require 'use-package)
@@ -29,6 +27,8 @@
 (require-init 'setup-general)
 
 (require-init 'setup-helm)
+(require-init 'setup-parens)
+(require-init 'setup-yasnippet)
 (require-init 'setup-python)
 
 ;;; $
