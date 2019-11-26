@@ -29,6 +29,7 @@
 (require-init 'setup-helm)
 (require-init 'setup-parens)
 (require-init 'setup-yasnippet)
+(require-init 'setup-company)
 (require-init 'setup-python)
 
 ;;; $
