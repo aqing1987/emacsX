@@ -28,6 +28,7 @@
 
 (require-init 'setup-general)
 
+(require-init 'setup-helm)
 (require-init 'setup-python)
 
 ;;; $
