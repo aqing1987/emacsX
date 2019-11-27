@@ -33,4 +33,6 @@
 (require-init 'setup-company)
 (require-init 'setup-python)
 
+(require-init 'setup-keymap)
+
 ;;; $
