@@ -32,6 +32,7 @@
 (require-init 'setup-yasnippet)
 (require-init 'setup-company)
 (require-init 'setup-python)
+(require-init 'setup-fonts)
 
 (require-init 'setup-keymap)
 
