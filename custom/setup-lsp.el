@@ -2,7 +2,6 @@
 
 ;;; Code:
 
-
 (use-package lsp-mode
   :ensure t
   :commands lsp
@@ -10,11 +9,8 @@
   (lsp-auto-guess-root nil)
   (lsp-prefer-flymake nil) ; Use flycheck instead of flymake
   :bind (:map lsp-mode-map ("C-c C-f" . lsp-format-buffer))
-  :config
-  (add-hook 'c-mode-hook #'lsp-deferred)
-  (add-hook 'c++-mode-hook #'lsp-deferred)
-  (add-hook 'python-mode-hook #'lsp-deferred))
-
+  :hook
+  ((c-mode c++-mode python-mode) . lsp))
 
 (use-package lsp-ui
   :after lsp-mode
@@ -46,11 +42,8 @@
 
 (use-package ccls
   :ensure t
-  :hook
-  ((c-mode c++-mode objc-mode) .
-   (lambda () (require 'ccls) (lsp))))
-
-(setq ccls-executable "/usr/local/bin/ccls")
+  :config
+  (setq ccls-executable "/usr/local/bin/ccls"))
 
 (provide 'setup-lsp)
 ;;; $
