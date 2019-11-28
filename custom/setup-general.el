@@ -46,7 +46,7 @@
       (set-frame-font "-apple-Monaco-medium-normal-normal-*-14-*-*-*-m-0-iso10646-1")
       (load-theme 'gandalf t)
       (setq default-frame-alist
-	    '((width . 106)))))
+	    '((width . 88)))))
 
 ;; copy shell environment to emacs environment
 (use-package exec-path-from-shell
