@@ -11,3 +11,4 @@ irony/
 recentf
 *.eld
 elpy/
+.lsp-session-v1

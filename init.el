@@ -26,13 +26,16 @@
 
 (require-init 'setup-general)
 
+(require-init 'setup-fonts)
 (require-init 'setup-helm)
 (require-init 'setup-parens)
 (require-init 'setup-counsel)
 (require-init 'setup-yasnippet)
+(require-init 'setup-lsp)
+
 (require-init 'setup-company)
 (require-init 'setup-python)
-(require-init 'setup-fonts)
+
 
 (require-init 'setup-keymap)
 

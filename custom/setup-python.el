@@ -1,24 +1,21 @@
-;;; package --- summary:
-;; for python development
+;;; Commentary:
+;; virtualenv -p python3 ~/.virtualenvs/p3
+;; cd .virtualenvs/p3
+;; source bin/activate
+;; pip3 install 'python-language-server[all]'
 
- ;;; commentary:
-;; sudo pip3 install flake8 autopep8 rope jedi importmagic yapf
-
- ;;; code:
+;;; Code:
 
 (setq python-indent-guess-indent-offset-verbose nil)
 
-;; elpy
-(use-package elpy
-  :init
-  (elpy-enable)
+(use-package virtualenvwrapper
+  :ensure t
   :config
-  (setq elpy-rpc-python-command "python3")
-  (setq python-shell-interpreter "python3")
-  (when (require 'flycheck nil t)
-    (setq elpy-modules (delq 'elpy-module-flymake elpy-modules))
-    (add-hook 'elpy-mode-hook 'flycheck-mode))
-  )
+  (venv-initialize-interactive-shells)
+  (venv-initialize-eshell))
+
+(venv-workon "p3")
+(setq lsp-python-executable-cmd "python3")
 
 (use-package py-autopep8
   :config
