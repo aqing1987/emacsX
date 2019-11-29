@@ -1,3 +1,9 @@
+;;; package --- Summary:
+
+;;; Commentary:
+
+;;; Code:
+
 ;; disable toolbar
 (tool-bar-mode -1)
 
@@ -53,5 +59,12 @@
   (when (memq window-system '(mac ns x))
     (exec-path-from-shell-initialize)))
 
+(use-package try
+  :ensure t)
+
+(use-package which-key
+  :ensure t
+  :config (which-key-mode))
+
 (provide 'setup-general)
-;;; $
+;;; setup-general.el ends here
