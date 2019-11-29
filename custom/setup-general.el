@@ -35,7 +35,6 @@
 ;; highlight current line
 (global-hl-line-mode 1)
 
-
 ;; keep a list of recently opened files
 (recentf-mode 1)
 (global-set-key (kbd "<f4>") 'recentf-open-files)

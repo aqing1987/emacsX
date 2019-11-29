@@ -1,3 +1,8 @@
+;;; package -- Summary:
+
+;;; Commentary:
+
+;;; Code:
 ;;; disalbe emacs making changes, and keep the settings in a separate file
 (setq custom-file (concat user-emacs-directory "custom-set-variables.el"))
 (load custom-file 'noerror)
@@ -16,6 +21,9 @@
 
 (require 'use-package)
 (setq use-package-always-ensure t)
+
+(use-package try
+  :ensure t)
 
 ;;; load configurations
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/custom"))
@@ -40,4 +48,4 @@
 
 (require-init 'setup-keymap)
 
-;;; $
+;;; init.el ends here

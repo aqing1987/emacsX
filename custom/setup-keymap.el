@@ -1,4 +1,5 @@
 ;;; Commentary:
+;; for flyspell support need do `brew install aspell'
 
 ;;; Code:
 
@@ -7,6 +8,7 @@
 (global-set-key (kbd "C-z") 'z-map)
 (define-key z-map (kbd "k") 'compile)
 (define-key z-map (kbd "g") 'counsel-ag)
+(define-key z-map (kbd "s") 'flyspell-correct-word-before-point)
 (define-key z-map (kbd "*") 'calc)
 
 (provide 'setup-keymap)

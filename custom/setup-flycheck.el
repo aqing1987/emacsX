@@ -19,5 +19,8 @@
   (with-eval-after-load 'flycheck
     (flycheck-pos-tip-mode)))
 
+;; set aspell for flyspell
+(setq ispell-program-name "/usr/local/bin/aspell")
+
 (provide 'setup-flycheck)
 ;;; $
