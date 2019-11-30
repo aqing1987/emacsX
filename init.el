@@ -34,6 +34,7 @@
 (require-init 'setup-fonts)
 (require-init 'setup-helm)
 (require-init 'setup-parens)
+(require-init 'setup-org)
 (require-init 'setup-flycheck)
 (require-init 'setup-counsel)
 (require-init 'setup-yasnippet)
