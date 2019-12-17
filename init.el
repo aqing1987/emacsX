@@ -43,6 +43,7 @@
 (require-init 'setup-company)
 (require-init 'setup-python)
 (require-init 'setup-cc)
+(require-init 'setup-asm)
 
 (require-init 'setup-keymap)
 

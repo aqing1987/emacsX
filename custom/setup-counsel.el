@@ -1,9 +1,13 @@
+;;; Package --- Summary:
 ;;; Commentary:
 ;; brew install the_silver_searcher
 
 ;;; Code:
 
 (use-package counsel
+  :ensure t)
+
+(use-package swiper
   :ensure t
   :config
   (ivy-mode 1)
@@ -27,4 +31,4 @@
   (define-key minibuffer-local-map (kbd "C-r") 'counsel-minibuffer-history))
 
 (provide 'setup-counsel)
-;;; $
+;;; setup-counsel.el ends here
